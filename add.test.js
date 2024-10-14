@@ -61,3 +61,12 @@ test('key should wrap around to start of alphabet', () => {
   expect(caeserCipher('xyz', 3)).toBe('abc')
 })
 
+test('returns object', () => {
+  expect(analyzeArr([3, 5, 7, 2])).toBe({
+    average: 4,
+    min: 2,
+    max: 7,
+    length: 4
+  })
+})
+
